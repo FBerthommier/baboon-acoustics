@@ -1,0 +1,28 @@
+{
+  "title": "baboon-acoustics: formant, F0, glottal-source and vocal-tract-length analysis tools",
+  "description": "<p>Python tools for the acoustic analysis of baboon vocalizations, supplementary to the article \u201cRe-analysis of formant trajectories in a chacma baboon wahoo vocalization\u201d (anonymized for review; a comment on Bo\u00eb et al. 2026, <em>International Journal of Primatology</em>).</p><p>The package provides: formant tracking with Praat\u2019s Burg LPC method (via Parselmouth, configurable number of poles); sliding iterative adaptive inverse filtering (IAIF, Alku 1991) yielding the glottal source, the vocal-tract envelope and formant tracks; fundamental-frequency estimation by autocorrelation, including a Gaussian pre-filter that emulates Praat\u2019s filtered autocorrelation and resists subharmonic errors; vocal-tract-length estimation after Reby &amp; McComb (2003); and glottal-source analysis (single-pulse extraction and full pulse-train reconstruction with phase-portrait and spectral views). Four scripts reproduce all figures of the article exactly from the provided audio files.</p>",
+  "creators": [
+    {
+      "name": "Anonymized for review"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "bioacoustics",
+    "formants",
+    "vocal tract length",
+    "fundamental frequency",
+    "IAIF",
+    "Praat",
+    "Parselmouth",
+    "baboon"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.20764395",
+      "relation": "isIdenticalTo",
+      "resource_type": "publication-article"
+    }
+  ]
+}

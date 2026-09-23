@@ -1,0 +1,40 @@
+# This CITATION.cff file describes how to cite this software.
+# NOTE: the author list is anonymized while the associated article is under
+# double-blind review. Replace the placeholder author with the real author
+# list upon acceptance, and fill in the Zenodo DOI after the first release
+# (see README, section "Linking this repository to Zenodo").
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+title: >-
+  baboon-acoustics: formant, F0, glottal-source and
+  vocal-tract-length analysis tools
+type: software
+authors:
+  - name: "Anonymized for review"
+    website: "https://doi.org/10.5281/zenodo.20764395"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.XXXXXXX"
+    description: Versioned DOI of this software deposit (to be filled after the first Zenodo release)
+repository-code: "https://github.com/<your-account>/baboon-acoustics"
+abstract: >-
+  Python tools for the acoustic analysis of baboon vocalizations:
+  formant tracking with Praat's Burg method and with iterative adaptive
+  inverse filtering (IAIF), fundamental-frequency estimation including a
+  Gaussian pre-filtered autocorrelation mode, vocal-tract-length
+  estimation after Reby & McComb (2003), and glottal-source analysis
+  (single pulse and full pulse train). Supplementary code of the article
+  "Re-analysis of formant trajectories in a chacma baboon wahoo
+  vocalization" (anonymized for review).
+keywords:
+  - bioacoustics
+  - formants
+  - vocal tract length
+  - fundamental frequency
+  - IAIF
+  - Praat
+  - Parselmouth
+  - baboon
+license: MIT
