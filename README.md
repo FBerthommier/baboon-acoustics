@@ -53,7 +53,8 @@ badges everything cited by the article (Open Data badge).
   emulates Praat's *filtered autocorrelation* (robust to subharmonics).
 - `iaif_sliding_analysis()` — full sliding IAIF decomposition: glottal
   source, vocal-tract envelope, F0 and formant tracks.
-- Four scripts reproduce every figure of the article exactly.
+- The scripts in `scripts/` reproduce every figure of the article exactly
+  and regenerate the interactive demos.
 
 ## Installation
 
@@ -168,6 +169,7 @@ baboon-acoustics/
 ├── data/                      # example audio and reference data
 │   ├── wahoo_1..4.wav         #   chacma baboon wahoo calls (44.1 kHz)
 │   ├── The_Baboon_Bark.wav    #   longer bark recording (16 s)
+│   ├── wahoo_4_f0_filtered_ac.csv       # archived reference F0 table (filtered AC)
 │   ├── reference_formants_boe2026.csv   # reference tracks digitized from Boë et al. (2026)
 │   └── vowel_space_mas_contour.csv      # Maximal Acoustic Space contour (kHz)
 ├── supplementary/             # the article's supplementary material (as archived)
@@ -183,7 +185,8 @@ baboon-acoustics/
 ├── LICENSE                    # MIT
 ├── requirements.txt
 ├── CITATION.cff               # citation metadata (GitHub "Cite this repository")
-└── .zenodo.json               # metadata pushed to Zenodo at each release
+├── .zenodo.json               # metadata pushed to Zenodo at each release
+└── .github/workflows/pages.yml  # deploys the repository to GitHub Pages on push
 ```
 
 Outputs of the scripts are written to `figures/` (not tracked by git).
