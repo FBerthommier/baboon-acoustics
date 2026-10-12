@@ -1,9 +1,11 @@
 {
-  "title": "baboon-acoustics: formant, F0, glottal-source and vocal-tract-length analysis tools",
-  "description": "<p>Python tools for the acoustic analysis of baboon vocalizations, supplementary to the article \u201cRe-analysis of formant trajectories in a chacma baboon wahoo vocalization\u201d (anonymized for review; a comment on Bo\u00eb et al. 2026, <em>International Journal of Primatology</em>).</p><p>The package provides: formant tracking with Praat\u2019s Burg LPC method (via Parselmouth, configurable number of poles); sliding iterative adaptive inverse filtering (IAIF, Alku 1991) yielding the glottal source, the vocal-tract envelope and formant tracks; fundamental-frequency estimation by autocorrelation, including a Gaussian pre-filter that emulates Praat\u2019s filtered autocorrelation and resists subharmonic errors; vocal-tract-length estimation after Reby &amp; McComb (2003); and glottal-source analysis (single-pulse extraction and full pulse-train reconstruction with phase-portrait and spectral views). Four scripts reproduce all figures of the article exactly from the provided audio files.</p>",
+  "title": "baboon-acoustics: supplementary code and materials of 'On the Reliability of Wahoo Formant Measurements: A Response to Bo\u00eb et al. (2026)'",
+  "description": "<p>Supplementary material of the article \u201cOn the Reliability of Wahoo Formant Measurements: A Response to Bo\u00eb et al. (2026)\u201d (International Journal of Primatology, 2026).</p><p>The deposit contains: (1) the complete supplementary materials \u2014 corrected document <em>Supplementary_materials.pdf</em>, all figures of the article and of the supplement, and the original analysis scripts archived verbatim (<em>supplementary/</em>); (2) the audio material \u2014 the four wahoo calls of the sequence, the full original recording <em>The_Baboon_Bark.wav</em> and the reference F0 table (<em>data/</em>); and (3) the refactored, documented Python package <em>baboon_acoustics</em>.</p><p>The package provides: formant tracking with Praat\u2019s Burg LPC method (via Parselmouth, configurable number of poles); sliding iterative adaptive inverse filtering (IAIF, Alku 1991) yielding the glottal source, the vocal-tract envelope and formant tracks; fundamental-frequency estimation by autocorrelation, including a Gaussian pre-filter that emulates Praat\u2019s filtered autocorrelation and resists subharmonic errors; vocal-tract-length estimation after Reby &amp; McComb (2003); and glottal-source analysis (single-pulse extraction and full pulse-train reconstruction with phase-portrait and spectral views). It also includes the figure-reproduction scripts, a guided example, interactive HTML demos, unit tests and a compiled user documentation (PDF).</p>",
   "creators": [
     {
-      "name": "Anonymized for review"
+      "name": "Berthommier, Fr\u00e9d\u00e9ric",
+      "affiliation": "CNRS, Grenoble INP, GIPSA-Lab, Universit\u00e9 Grenoble Alpes, Grenoble, France",
+      "orcid": "0000-0000-0000-0000"
     }
   ],
   "license": "MIT",
@@ -16,13 +18,18 @@
     "IAIF",
     "Praat",
     "Parselmouth",
-    "baboon"
+    "baboon",
+    "wahoo"
   ],
+  "journal": {
+    "title": "International Journal of Primatology"
+  },
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.20764395",
-      "relation": "isIdenticalTo",
+      "identifier": "10.1007/s10764-026-00551-4",
+      "relation": "references",
       "resource_type": "publication-article"
     }
-  ]
+  ],
+  "notes": "The relation 'isSupplementTo' the commented article will be added with the article's own DOI upon online publication; the ORCID is to be completed by the author."
 }

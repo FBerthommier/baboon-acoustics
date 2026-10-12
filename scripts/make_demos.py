@@ -869,8 +869,9 @@ with <code>python scripts/make_demos.py</code>.</p>
     Hilbert phase portrait.</p></div>
 </div>
 <p class="doc">Part of the <code>baboon-acoustics</code> repository
-(supplementary code of the article, anonymized for review). See the
-repository README for the Python API.</p>
+(supplementary material of the article "On the Reliability of Wahoo
+Formant Measurements: A Response to Bo&euml; et al. (2026)", F.
+Berthommier, 2026). See the repository README for the Python API.</p>
 </body>
 </html>
 """

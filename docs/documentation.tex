@@ -14,7 +14,7 @@
 \hypersetup{
   colorlinks=true, linkcolor=blue!60!black, urlcolor=blue!60!black,
   citecolor=blue!60!black, pdftitle={baboon-acoustics user documentation},
-  pdfauthor={anonymized for review}}
+  pdfauthor={Fr\'ed\'eric Berthommier}}
 \usepackage{enumitem}
 \setlist{itemsep=2pt, topsep=4pt}
 
@@ -40,21 +40,23 @@
 \large Formant, F0, glottal-source and vocal-tract-length\\
 analysis of baboon vocalizations\\[4mm]
 \normalsize User documentation (v1.0)}
-\author{anonymized for review}
-\date{September 2026}
+\author{Fr\'ed\'eric Berthommier\\[1mm]
+\normalsize CNRS, Grenoble INP, GIPSA-Lab, Universit\'e Grenoble Alpes\\[0.5mm]
+\normalsize \href{mailto:frederic.berthommier@gipsa-lab.grenoble-inp.fr}{frederic.berthommier@gipsa-lab.grenoble-inp.fr}}
+\date{October 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
 \noindent This document is the user guide of the \pkg{} Python package,
-the supplementary code of the article \emph{Re-analysis of formant
-trajectories in a chacma baboon wahoo vocalization} (anonymized for
-review). It introduces the underlying acoustic concepts in plain
-language, walks through the installation, follows a complete tutorial on
-the provided recordings, documents every public function of the package,
-and answers frequently asked questions. No prior signal-processing
-knowledge is assumed.
+the supplementary code of the article \emph{On the Reliability of Wahoo
+Formant Measurements: A Response to Bo\"e et al.\ (2026)} (International
+Journal of Primatology, 2026). It introduces the underlying acoustic
+concepts in plain language, walks through the installation, follows a
+complete tutorial on the provided recordings, documents every public
+function of the package, and answers frequently asked questions. No
+prior signal-processing knowledge is assumed.
 \end{abstract}
 
 \tableofcontents
@@ -118,7 +120,7 @@ a regular periodic source.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=\textwidth]{figures/Figure1.png}
+\includegraphics[width=\textwidth]{../supplementary/figures/Figure1.png}
 \caption{Formant re-analysis of the wahoo (output of
 \texttt{scripts/make\_figure1.py}). Panels (A) and (B): Parselmouth
 tracks with $N=4$ and $N=6$ poles (grey dashed lines: reference data
@@ -261,7 +263,7 @@ vocal-tract envelope with the IAIF formants (F).
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.72\textwidth]{figures/analysis_3x2_panels.png}
+\includegraphics[width=0.72\textwidth]{../supplementary/figures/analysis_3x2_panels.png}
 \caption{Six-panel analysis of \texttt{wahoo\_4.wav} (output of
 \texttt{scripts/make\_figure\_multipanel.py}). The F1--F2 trajectories
 of panels (C)--(D) are drawn over the Maximal Acoustic Space contour of
@@ -295,9 +297,9 @@ folded trajectories indicate subharmonics or chaos
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.485\textwidth]{figures/glottal_pulse.png}
+\includegraphics[width=0.485\textwidth]{../supplementary/figures/glottal_pulse.png}
 \hfill
-\includegraphics[width=0.485\textwidth]{figures/glottal_train_analysis_hoo.png}
+\includegraphics[width=0.485\textwidth]{../supplementary/figures/glottal_train_analysis_hoo.png}
 \caption{Left: single glottal pulse estimated by IAIF. Right:
 four-panel glottal-source analysis of the ``hoo'' segment (output of
 \texttt{scripts/make\_figure\_glottal.py}): waveform, Hilbert phase
@@ -315,7 +317,7 @@ segment --- the two exclusion criteria discussed in the article.
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.9\textwidth]{figures/wahoo_4_f0_filtered_ac.png}
+\includegraphics[width=0.9\textwidth]{../supplementary/figures/wahoo_4_f0_filtered_ac.png}
 \caption{F0 contour of \texttt{wahoo\_4.wav} obtained with the Gaussian
 pre-filtered autocorrelation (output of \texttt{scripts/make\_figure\_f0.py}).}
 \label{fig:f0}

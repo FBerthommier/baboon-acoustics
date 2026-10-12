@@ -10,14 +10,17 @@ fundamental-frequency (F0) estimation, vocal-tract-length (VTL) estimation,
 and glottal-source analysis. The functions are designed to be reused as-is
 on your own recordings — no advanced Python skills required.
 
-This repository is the supplementary code of the article *Re-analysis of
-formant trajectories in a chacma baboon wahoo vocalization* (**anonymized
-for review**; the article is a comment on Boë et al. 2026, "Stalking the
-wild formant: How to reliably measure formants in primate vocalizations",
-*International Journal of Primatology*). The article's supplementary
-materials (audio, reference figures, PDF documentation) are archived on
-Zenodo under the concept DOI
-[10.5281/zenodo.20764395](https://doi.org/10.5281/zenodo.20764395).
+This repository is the complete, archived supplementary material of the
+article *On the Reliability of Wahoo Formant Measurements: A Response to
+Boë et al. (2026)* by Frédéric Berthommier (International Journal of
+Primatology, 2026) — a comment on Boë et al. 2026, "Stalking the wild
+formant: How to reliably measure formants in primate vocalizations",
+*International Journal of Primatology*, 47(3), 799–841. It contains the
+supplementary document and figures, the original analysis scripts, the
+audio material, and the refactored `baboon_acoustics` package with its
+documentation, tests and interactive demos. This GitHub repository is
+imported by Zenodo so that **one single DOI** archives and badges
+everything cited by the article (Open Data badge).
 
 ## Highlights
 
@@ -146,11 +149,15 @@ baboon-acoustics/
 │   ├── The_Baboon_Bark.wav    #   longer bark recording (16 s)
 │   ├── reference_formants_boe2026.csv   # reference tracks digitized from Boë et al. (2026)
 │   └── vowel_space_mas_contour.csv      # Maximal Acoustic Space contour (kHz)
+├── supplementary/             # the article's supplementary material (as archived)
+│   ├── Supplementary_materials.pdf  # corrected & completed supplement document
+│   ├── figures/               #   all figures of the article and of the supplement
+│   ├── original_scripts/      #   the four analysis scripts described in the supplement (verbatim)
+│   └── source/                #   LaTeX source of the supplement document
 ├── tests/                     # unit tests (python -m unittest discover -s tests)
 ├── docs/
 │   ├── documentation.tex      # source of the user documentation
-│   ├── baboon-acoustics-documentation.pdf   # compiled documentation
-│   └── figures/               # reference figures used by the documentation
+│   └── baboon-acoustics-documentation.pdf   # compiled documentation
 ├── README.md
 ├── LICENSE                    # MIT
 ├── requirements.txt
@@ -188,29 +195,29 @@ FAQ) is provided as a PDF:
 
 ## Linking this repository to Zenodo (for the maintainer)
 
-This repository is set up for automatic archiving on
-[Zenodo](https://zenodo.org), which mints a DOI for every release:
+This repository is the **single archived deposit** cited by the article:
+everything (supplementary document, figures, original scripts, audio,
+package) lives here, and Zenodo archives a snapshot of each GitHub
+release with a versioned DOI. The article cites only that DOI (Open Data
+badge).
 
 1. Create a release on GitHub (`git tag v1.0.0 && git push --tags`, then
    "Draft new release" on the repository page).
 2. Zenodo (once the repository is enabled in your Zenodo account under
    "GitHub") imports the tag, applies the metadata from `.zenodo.json`,
    and publishes a new versioned DOI.
-3. After the first release, copy the **concept DOI** shown on the Zenodo
-   record and:
-   - replace `10.5281/zenodo.XXXXXXX` in the badge at the top of this
-     README;
-   - add the same identifier to `related_identifiers` in `.zenodo.json`
-     (relation `isVersionOf`);
-   - update `identifiers` in `CITATION.cff`.
-4. Before publishing the first public release, also replace the
-   placeholder author entries ("anonymized for review") in
-   `.zenodo.json`, `CITATION.cff` and `LICENSE` with the real author
-   list — the article is currently under double-blind review.
-
-The article's supplementary deposit (audio, reference figures, method
-PDF) remains available at
-[10.5281/zenodo.20764395](https://doi.org/10.5281/zenodo.20764395).
+3. After the first release:
+   - copy the **concept DOI** shown on the Zenodo record and replace
+     `10.5281/zenodo.XXXXXXX` in the badge at the top of this README and
+     in `CITATION.cff`;
+   - in `.zenodo.json`, complete the author ORCID and add the article's
+     own journal DOI to `related_identifiers` with the relation
+     `isSupplementTo` (currently only Boë et al. 2026 is referenced);
+   - write the DOI in the article's Data Availability statement
+     ("Experiment materials and data are available in the repository
+     at <DOI>"), which earns the Open Data badge.
+4. Commit the README/CITATION changes; the next release carries the
+   corrected metadata.
 
 ## Citation
 
@@ -218,8 +225,10 @@ If you use this code, please cite the software release:
 
 ```bibtex
 @software{baboon_acoustics_2026,
-  author  = {{anonymized for review}},
-  title   = {baboon-acoustics: formant, F0, glottal-source and vocal-tract-length analysis tools},
+  author  = {Berthommier, Fr{\'e}d{\'e}ric},
+  title   = {baboon-acoustics: supplementary code and materials of
+             "On the Reliability of Wahoo Formant Measurements:
+             A Response to Bo{\"e} et al. (2026)"},
   year    = {2026},
   url     = {https://github.com/<your-account>/baboon-acoustics},
   doi     = {10.5281/zenodo.XXXXXXX},
@@ -227,7 +236,9 @@ If you use this code, please cite the software release:
 }
 ```
 
-… and the article (reference to be added upon acceptance).
+… and the article: Berthommier, F. (2026). On the Reliability of Wahoo
+Formant Measurements: A Response to Boë et al. (2026). *International
+Journal of Primatology* (DOI to be inserted upon online publication).
 
 Key methods implemented here: IAIF inverse filtering (Alku 1991);
 formant-based VTL estimation (Reby & McComb 2003); Praat/Parselmouth Burg

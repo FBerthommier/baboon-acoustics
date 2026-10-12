@@ -1,33 +1,38 @@
 # This CITATION.cff file describes how to cite this software.
-# NOTE: the author list is anonymized while the associated article is under
-# double-blind review. Replace the placeholder author with the real author
-# list upon acceptance, and fill in the Zenodo DOI after the first release
-# (see README, section "Linking this repository to Zenodo").
+# NOTE: fill in the Zenodo DOI after the first GitHub release (see README,
+# section "Linking this repository to Zenodo"), and add the commented
+# article's own DOI to `identifiers` or `related-resources` once assigned.
 cff-version: 1.2.0
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
 title: >-
-  baboon-acoustics: formant, F0, glottal-source and
-  vocal-tract-length analysis tools
+  baboon-acoustics: supplementary code and materials of
+  "On the Reliability of Wahoo Formant Measurements: A Response
+  to Boë et al. (2026)"
 type: software
 authors:
-  - name: "Anonymized for review"
-    website: "https://doi.org/10.5281/zenodo.20764395"
+  - family-names: Berthommier
+    given-names: Frédéric
+    affiliation: "CNRS, Grenoble INP, GIPSA-Lab, Université Grenoble Alpes, Grenoble, France"
+    email: frederic.berthommier@gipsa-lab.grenoble-inp.fr
 identifiers:
   - type: doi
     value: "10.5281/zenodo.XXXXXXX"
-    description: Versioned DOI of this software deposit (to be filled after the first Zenodo release)
-repository-code: "https://github.com/<your-account>/baboon-acoustics"
+    description: Versioned DOI of this deposit (filled after the first Zenodo release)
 abstract: >-
-  Python tools for the acoustic analysis of baboon vocalizations:
-  formant tracking with Praat's Burg method and with iterative adaptive
-  inverse filtering (IAIF), fundamental-frequency estimation including a
-  Gaussian pre-filtered autocorrelation mode, vocal-tract-length
-  estimation after Reby & McComb (2003), and glottal-source analysis
-  (single pulse and full pulse train). Supplementary code of the article
-  "Re-analysis of formant trajectories in a chacma baboon wahoo
-  vocalization" (anonymized for review).
+  Supplementary code and materials of the article "On the Reliability of
+  Wahoo Formant Measurements: A Response to Boë et al. (2026)"
+  (International Journal of Primatology, 2026). Contains the complete
+  supplementary document, all figures, the original analysis scripts
+  archived verbatim, and a refactored Python package (baboon_acoustics)
+  for formant tracking with Praat's Burg method and with iterative
+  adaptive inverse filtering (IAIF), fundamental-frequency estimation
+  including a Gaussian pre-filtered autocorrelation mode,
+  vocal-tract-length estimation after Reby & McComb (2003), and
+  glottal-source analysis (single pulse and full pulse train), with
+  figure-reproduction scripts, a guided example, interactive HTML demos,
+  unit tests and a compiled user documentation.
 keywords:
   - bioacoustics
   - formants

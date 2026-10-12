@@ -3,9 +3,10 @@
 Python tools for the acoustic analysis of baboon vocalizations: formant
 extraction (Praat's Burg method and IAIF inverse filtering),
 fundamental-frequency estimation, vocal-tract-length estimation and
-glottal-source analysis. Developed as supplementary material for the
-article "Re-analysis of formant trajectories in a chacma baboon wahoo
-vocalization" (anonymized for review).
+glottal-source analysis. Developed as the supplementary code of the
+article "On the Reliability of Wahoo Formant Measurements: A Response to
+Boë et al. (2026)" by Frédéric Berthommier (International Journal of
+Primatology, 2026).
 
 The main entry points are re-exported at the package level::
 
