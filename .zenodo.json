@@ -4,7 +4,8 @@
   "creators": [
     {
       "name": "Berthommier, Fr\u00e9d\u00e9ric",
-      "affiliation": "CNRS, Grenoble INP, GIPSA-Lab, Universit\u00e9 Grenoble Alpes, Grenoble, France"
+      "affiliation": "CNRS, Grenoble INP, GIPSA-Lab, Universit\u00e9 Grenoble Alpes, Grenoble, France",
+      "orcid": "https://orcid.org/0000-0001-7480-048X"
     }
   ],
   "license": "MIT",
@@ -30,5 +31,5 @@
       "resource_type": "publication-article"
     }
   ],
-  "notes": "The relation 'isSupplementTo' the commented article will be added with the article's own DOI upon online publication."
+  "notes": "Versioned DOI of this release: 10.5281/zenodo.23320157. The relation 'isSupplementTo' the commented article will be added with the article's own DOI upon online publication."
 }
