@@ -4,6 +4,27 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-informational.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org)
 
+**Frédéric Berthommier** — CNRS, Grenoble INP, GIPSA-Lab, Université
+Grenoble Alpes, 11 Rue des Mathématiques – BP 46, 38402 Saint Martin
+d'Hères Cedex, Grenoble, France —
+<frederic.berthommier@gipsa-lab.grenoble-inp.fr>
+
+## 📖 Read and interact — no installation needed
+
+| | |
+|---|---|
+| 📄 **Supplementary materials of the article** | [`supplementary/Supplementary_materials.pdf`](supplementary/Supplementary_materials.pdf) — opens directly in the browser |
+| 📄 **Article figure set** | [`supplementary/figures/`](supplementary/figures) — all figures of the article and of the supplement |
+| 📄 **Original analysis scripts** (as archived) | [`supplementary/original_scripts/`](supplementary/original_scripts) |
+| 🎛 **Interactive demos** (audio + dynamic plots) | [`demos/index.html`](https://<your-account>.github.io/baboon-acoustics/demos/) — served by GitHub Pages, or open any `demos/*.html` locally: the pages are fully self-contained |
+| 📄 **User documentation of the package** | [`docs/baboon-acoustics-documentation.pdf`](docs/baboon-acoustics-documentation.pdf) — concepts, tutorial, API reference, FAQ |
+
+> The demo pages work offline: each one embeds its audio (base64) and the
+> precomputed analysis results. To publish them in one click, enable
+> **Settings → Pages → Source: GitHub Actions** after pushing — the
+> included workflow (`.github/workflows/pages.yml`) deploys the
+> repository automatically; the links above then become live.
+
 Python tools for the acoustic analysis of baboon vocalizations: formant
 tracking (Praat's Burg method and IAIF inverse filtering),
 fundamental-frequency (F0) estimation, vocal-tract-length (VTL) estimation,
@@ -12,15 +33,15 @@ on your own recordings — no advanced Python skills required.
 
 This repository is the complete, archived supplementary material of the
 article *On the Reliability of Wahoo Formant Measurements: A Response to
-Boë et al. (2026)* by Frédéric Berthommier (International Journal of
-Primatology, 2026) — a comment on Boë et al. 2026, "Stalking the wild
-formant: How to reliably measure formants in primate vocalizations",
-*International Journal of Primatology*, 47(3), 799–841. It contains the
-supplementary document and figures, the original analysis scripts, the
-audio material, and the refactored `baboon_acoustics` package with its
-documentation, tests and interactive demos. This GitHub repository is
-imported by Zenodo so that **one single DOI** archives and badges
-everything cited by the article (Open Data badge).
+Boë et al. (2026)* — Frédéric Berthommier, *International Journal of
+Primatology* (accepted 1 October 2026) — a comment on Boë et al. 2026,
+"Stalking the wild formant: How to reliably measure formants in primate
+vocalizations", *International Journal of Primatology*, 47(3), 799–841.
+It contains the supplementary document and figures, the original analysis
+scripts, the audio material, and the refactored `baboon_acoustics` package
+with its documentation, tests and interactive demos. This GitHub
+repository is imported by Zenodo so that **one single DOI** archives and
+badges everything cited by the article (Open Data badge).
 
 ## Highlights
 
@@ -250,12 +271,28 @@ Released under the [MIT License](LICENSE).
 
 ## References
 
+- Berthommier, F. (2026). On the Reliability of Wahoo Formant
+  Measurements: A Response to Boë et al. (2026). *International Journal
+  of Primatology* (accepted 1 October 2026; DOI to be inserted upon
+  online publication).
 - Alku, P. (1991). Glottal wave analysis with pitch synchronous iterative
   adaptive inverse filtering. *Proceedings of Eurospeech 1991*, 1081–1084.
 - Boë, L.-J., Laporte, M., Sawallis, T. R., Badin, P., & Schwartz, J.-L.
   (2026). Stalking the wild formant: How to reliably measure formants in
-  primate vocalizations. *International Journal of Primatology*.
-  https://doi.org/10.1007/s10764-026-00551-4
+  primate vocalizations. *International Journal of Primatology*, 47(3),
+  799–841. https://doi.org/10.1007/s10764-026-00551-4
+- Fitch, W. T., Anikin, A., Pisanski, K., Valente, D., & Reby, D. (2025).
+  Formant analysis of vertebrate vocalizations: Achievements, pitfalls,
+  and promises. *BMC Biology*, 23, Article 92.
+  https://doi.org/10.1186/s12915-025-02188-w
+- Fitch, W. T., Neubauer, J., & Herzel, H. (2002). Calls out of chaos:
+  The adaptive significance of nonlinear phenomena in mammalian vocal
+  production. *Animal Behaviour*, 63(3), 407–418.
+- Grawunder, S., Uomini, N., Samuni, L., Bortolato, T., Girard-Buttoz,
+  C., Wittig, R. M., & Crockford, C. (2022). Chimpanzee vowel-like sounds
+  and voice quality suggest formant space expansion through the hominoid
+  lineage. *Philosophical Transactions of the Royal Society B*, 377(1841),
+  20200455. https://doi.org/10.1098/rstb.2020.0455
 - Jadoul, Y., Thompson, B., & de Boer, B. (2018). Introducing Parselmouth:
   A Python interface to Praat. *Journal of Phonetics*, 71, 1–15.
 - Reby, D., & McComb, K. (2003). Anatomical constraints generate honesty:
