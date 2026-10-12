@@ -1,5 +1,6 @@
 # This CITATION.cff file describes how to cite this software.
-# NOTE: fill in the Zenodo DOI of the first release in `identifiers` below.
+# NOTE: the Zenodo DOI of this release is assigned by Zenodo when the
+# release is published; add it to `identifiers` once available.
 cff-version: 1.2.0
 message: >-
   If you use this software, please cite it using the
@@ -15,9 +16,9 @@ authors:
     affiliation: "CNRS, Grenoble INP, GIPSA-Lab, Université Grenoble Alpes, Grenoble, France"
     email: frederic.berthommier@gipsa-lab.grenoble-inp.fr
 identifiers:
-  - type: doi
-    value: "10.5281/zenodo.XXXXXXX"
-    description: Versioned DOI of this deposit (filled after the first Zenodo release)
+  - type: url
+    value: "https://github.com/FBerthommier/baboon-acoustics"
+    description: Software repository (a versioned Zenodo DOI is assigned to each GitHub release)
 repository-code: "https://github.com/FBerthommier/baboon-acoustics"
 url: "https://fberthommier.github.io/baboon-acoustics/"
 abstract: >-
