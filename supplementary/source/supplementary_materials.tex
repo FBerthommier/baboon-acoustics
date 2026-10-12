@@ -22,6 +22,9 @@
 \setlist{itemsep=2pt, topsep=4pt}
 \usepackage{longtable}
 \usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+\captionsetup{font=small}
 \usepackage{titlesec}
 \titlespacing*{\section}{0pt}{14pt}{6pt}
 
@@ -50,6 +53,7 @@ A Response to Bo\"e et al.\ (2026)''}\\[6mm]
 \date{October 2026}
 
 \begin{document}
+\sloppy
 \maketitle
 \vspace{-6mm}
 
@@ -323,7 +327,7 @@ their Fig.~10h), with one Reby--McComb VTL estimate per panel.
 
 \begin{figure}[p]
 \centering
-\includegraphics[width=0.8\textwidth]{../figures/analysis_3x2_panels.png}
+\includegraphics[width=0.68\textwidth]{../figures/analysis_3x2_panels.png}
 \caption{Multi-panel analysis of a baboon wahoo call (exemplar file
 \file{wahoo\_4.wav}), produced by
 \file{scripts/make\_figure\_multipanel.py}. (A)~Wideband spectrogram of
@@ -454,8 +458,8 @@ documented in earlier versions of this supplement to its package
 equivalent.
 
 \begin{table}[h]
-\centering\small
-\begin{tabular}{ll}
+\centering\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.44\textwidth}>{\raggedright\arraybackslash}p{0.48\textwidth}@{}}
 \toprule
 Archived script function & Package equivalent \\
 \midrule
@@ -463,17 +467,17 @@ Archived script function & Package equivalent \\
 \file{lpc\_levinson} & \file{formants\_iaif.lpc\_levinson} \\
 \file{lpc\_spectrum\_db} & \file{formants\_iaif.lpc\_spectrum\_db} \\
 \file{iaif\_frame} & \file{formants\_iaif.iaif\_frame} \\
-\file{get\_frame\_formants}, \file{\_3} & \file{formants\_iaif.get\_frame\_formants} (\file{n\_formants}) \\
-\file{iaif\_sliding\_analysis}, \file{\_3} & \file{formants\_iaif.iaif\_sliding\_analysis} (\file{n\_formants}) \\
+\file{get\_frame\_formants}, \file{get\_frame\_formants\_3} & \file{formants\_iaif.get\_frame\_formants} (parameter \file{n\_formants}) \\
+\file{iaif\_sliding\_analysis}, \file{iaif\_sliding\_analysis\_3} & \file{formants\_iaif.iaif\_sliding\_analysis} (parameter \file{n\_formants}) \\
 \file{estimate\_f0\_from\_gn} & \file{f0.estimate\_f0\_from\_gn} \\
 \file{gaussian\_lowpass\_filter}, \file{analyze\_pitch\_ac} & \file{f0.gaussian\_lowpass\_filter}, \file{f0.estimate\_f0\_praat} \\
-\file{reby\_mccomb\_vtl\_global}, \file{\_3} & \file{vtl.reby\_mccomb\_vtl} \\
-\file{extract\_parselmouth\_formants\_n} & \file{formants\_praat.extract\_praat\_formants} (+ \file{interpolate\_formants}) \\
+\file{reby\_mccomb\_vtl\_global}, \file{reby\_mccomb\_vtl\_global\_3} & \file{vtl.reby\_mccomb\_vtl} \\
+\file{extract\_parselmouth\_formants\_n} & \file{formants\_praat.extract\_praat\_formants} with \file{formants\_praat.interpolate\_formants} \\
 \file{extract\_and\_save\_glottal\_pulse} & \file{glottal.extract\_glottal\_pulse} \\
 \file{extract\_full\_glottal\_train} & \file{glottal.extract\_glottal\_train} \\
 \file{normalize\_amplitude} & \file{glottal.normalize\_amplitude} \\
-\file{plot\_f1f2\_trajectory}, \file{setup\_frequency\_axis}, & \file{plotting.*} \\
-\file{add\_panel\_label}, \file{fix\_initial\_nan} & (\file{fill\_leading\_nan} in \file{formants\_praat}) \\
+\file{plot\_f1f2\_trajectory}, \file{setup\_frequency\_axis}, \file{add\_panel\_label} & \file{plotting.plot\_f1f2\_trajectory}, \file{plotting.setup\_frequency\_axis}, \file{plotting.add\_panel\_label} \\
+\file{fix\_initial\_nan} & \file{formants\_praat.fill\_leading\_nan} \\
 \file{plot\_phase\_portrait} & \file{plotting.plot\_phase\_portrait} \\
 \bottomrule
 \end{tabular}
