@@ -16,7 +16,7 @@ d'Hères Cedex, Grenoble, France —
 | 📄 **Supplementary materials of the article** | [`supplementary/Supplementary_materials.pdf`](supplementary/Supplementary_materials.pdf) — opens directly in the browser |
 | 📄 **Article figure set** | [`supplementary/figures/`](supplementary/figures) — all figures of the article and of the supplement |
 | 📄 **Original analysis scripts** (as archived) | [`supplementary/original_scripts/`](supplementary/original_scripts) |
-| 🎛 **Interactive demos** (audio + dynamic plots) | [`demos/index.html`](https://<your-account>.github.io/baboon-acoustics/demos/) — served by GitHub Pages, or open any `demos/*.html` locally: the pages are fully self-contained |
+| 🎛 **Interactive demos** (audio + dynamic plots) | [`demos/index.html`](https://FBerthommier.github.io/baboon-acoustics/demos/) — served by GitHub Pages, or open any `demos/*.html` locally: the pages are fully self-contained |
 | 📄 **User documentation of the package** | [`docs/baboon-acoustics-documentation.pdf`](docs/baboon-acoustics-documentation.pdf) — concepts, tutorial, API reference, FAQ |
 
 > The demo pages work offline: each one embeds its audio (base64) and the
@@ -64,7 +64,7 @@ Requirements: **Python 3.9+** and the four packages listed in
 installed — `praat-parselmouth` ships it.
 
 ```bash
-git clone https://github.com/<your-account>/baboon-acoustics.git
+git clone https://github.com/FBerthommier/baboon-acoustics.git
 cd baboon-acoustics
 python -m pip install -r requirements.txt
 ```
@@ -254,7 +254,7 @@ If you use this code, please cite the software release:
              "On the Reliability of Wahoo Formant Measurements:
              A Response to Bo{\"e} et al. (2026)"},
   year    = {2026},
-  url     = {https://github.com/<your-account>/baboon-acoustics},
+  url     = {https://github.com/FBerthommier/baboon-acoustics},
   doi     = {10.5281/zenodo.XXXXXXX},
   license = {MIT}
 }

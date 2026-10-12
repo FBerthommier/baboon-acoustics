@@ -20,6 +20,8 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.XXXXXXX"
     description: Versioned DOI of this deposit (filled after the first Zenodo release)
+repository-code: "https://github.com/FBerthommier/baboon-acoustics"
+url: "https://fberthommier.github.io/baboon-acoustics/"
 abstract: >-
   Supplementary code and materials of the article "On the Reliability of
   Wahoo Formant Measurements: A Response to Boë et al. (2026)"
