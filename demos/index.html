@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>baboon-acoustics - interactive demos</title>
+<style>
+
+:root { --ink:#1a1a1a; --muted:#666; --line:#ddd; --accent:#0a6ebd; }
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; color: var(--ink);
+       max-width: 980px; margin: 0 auto; padding: 16px; background:#fafafa; }
+h1 { font-size: 20px; margin: 8px 0 2px; }
+h2 { font-size: 15px; margin: 14px 0 6px; }
+p.doc { color: var(--muted); font-size: 13px; line-height: 1.45; margin: 6px 0 12px; }
+.card { background:#fff; border:1px solid var(--line); border-radius:8px;
+        padding:12px 14px; margin:12px 0; }
+.controls { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:8px 0; }
+.controls button, .controls select {
+  font-size:13px; padding:5px 10px; border:1px solid var(--line);
+  border-radius:6px; background:#fff; cursor:pointer; }
+.controls button.on { background: var(--accent); color:#fff; border-color: var(--accent); }
+.badge { font-size:13px; background:#eef4fa; border:1px solid #cfe0f0;
+         border-radius:6px; padding:4px 8px; }
+canvas { display:block; width:100%; height:auto; background:#fff;
+         border:1px solid var(--line); border-radius:4px; touch-action:none; }
+#readout { font-size:13px; color:var(--muted); min-height:18px; margin-top:4px;
+           font-family:Consolas,monospace; }
+a.back { font-size:13px; color: var(--accent); text-decoration:none; }
+.playbtn { min-width:84px; }
+
+.grid { display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
+.grid .card a { color: var(--accent); font-weight:bold; text-decoration:none; font-size:16px; }
+</style>
+</head>
+<body>
+<h1>baboon-acoustics &mdash; interactive demos</h1>
+<p class="doc">Self-contained HTML demos of the analyses of the article:
+each page embeds the audio (base64) and the precomputed analysis data, so
+it runs offline in any browser. Plots are interactive: toggles, hover
+readouts, playback cursor, click-to-seek, mouse-wheel zoom. Regenerate
+with <code>python scripts/make_demos.py</code>.</p>
+<div class="grid">
+  <div class="card"><a href="demo_formants.html">Formant tracks</a>
+    <p class="doc">Praat/Burg N=4 vs N=6 vs merged trajectories against the
+    reference, with VTL estimates and synchronized audio playback.</p></div>
+  <div class="card"><a href="demo_spectrogram.html">Spectrogram + formants</a>
+    <p class="doc">Short-term spectrogram with Praat, IAIF and F0 overlays;
+    playback cursor and seek.</p></div>
+  <div class="card"><a href="demo_f0.html">F0 contours</a>
+    <p class="doc">Filtered vs raw autocorrelation F0 for the four wahoos;
+    the disagreements flag subharmonic dynamics.</p></div>
+  <div class="card"><a href="demo_glottal.html">Glottal source</a>
+    <p class="doc">IAIF pulse train (wheel zoom), single glottal cycle and
+    Hilbert phase portrait.</p></div>
+</div>
+<p class="doc">Part of the <code>baboon-acoustics</code> repository
+(supplementary code of the article, anonymized for review). See the
+repository README for the Python API.</p>
+</body>
+</html>
