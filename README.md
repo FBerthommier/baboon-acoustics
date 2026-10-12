@@ -217,32 +217,6 @@ FAQ) is provided as a PDF:
 (LaTeX source in `docs/documentation.tex`; rebuild with
 `latexmk -pdf documentation.tex`).
 
-## Linking this repository to Zenodo (for the maintainer)
-
-This repository is the **single archived deposit** cited by the article:
-everything (supplementary document, figures, original scripts, audio,
-package) lives here, and Zenodo archives a snapshot of each GitHub
-release with a versioned DOI. The article cites only that DOI (Open Data
-badge).
-
-1. Create a release on GitHub (`git tag v1.0.0 && git push --tags`, then
-   "Draft new release" on the repository page).
-2. Zenodo (once the repository is enabled in your Zenodo account under
-   "GitHub") imports the tag, applies the metadata from `.zenodo.json`,
-   and publishes a new versioned DOI.
-3. After the first release:
-   - copy the **concept DOI** shown on the Zenodo record and replace
-     `10.5281/zenodo.XXXXXXX` in the badge at the top of this README and
-     in `CITATION.cff`;
-   - in `.zenodo.json`, complete the author ORCID and add the article's
-     own journal DOI to `related_identifiers` with the relation
-     `isSupplementTo` (currently only Boë et al. 2026 is referenced);
-   - write the DOI in the article's Data Availability statement
-     ("Experiment materials and data are available in the repository
-     at <DOI>"), which earns the Open Data badge.
-4. Commit the README/CITATION changes; the next release carries the
-   corrected metadata.
-
 ## Citation
 
 If you use this code, please cite the software release:
