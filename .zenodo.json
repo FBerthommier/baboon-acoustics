@@ -26,10 +26,15 @@
   },
   "related_identifiers": [
     {
+      "identifier": "10.1007/s10764-026-00592-9",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
       "identifier": "10.1007/s10764-026-00551-4",
       "relation": "references",
       "resource_type": "publication-article"
     }
   ],
-  "notes": "Versioned DOI of this release: 10.5281/zenodo.23320157. The relation 'isSupplementTo' the commented article will be added with the article's own DOI upon online publication."
+  "notes": "Versioned DOI of this release: 10.5281/zenodo.23320157."
 }

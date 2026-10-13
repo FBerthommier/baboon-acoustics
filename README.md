@@ -236,7 +236,7 @@ If you use this code, please cite the software release:
 
 … and the article: Berthommier, F. (2026). On the Reliability of Wahoo
 Formant Measurements: A Response to Boë et al. (2026). *International
-Journal of Primatology* (DOI to be inserted upon online publication).
+Journal of Primatology*. https://doi.org/10.1007/s10764-026-00592-9
 
 Key methods implemented here: IAIF inverse filtering (Alku 1991);
 formant-based VTL estimation (Reby & McComb 2003); Praat/Parselmouth Burg
@@ -250,8 +250,7 @@ Released under the [MIT License](LICENSE).
 
 - Berthommier, F. (2026). On the Reliability of Wahoo Formant
   Measurements: A Response to Boë et al. (2026). *International Journal
-  of Primatology* (accepted 1 October 2026; DOI to be inserted upon
-  online publication).
+  of Primatology*. https://doi.org/10.1007/s10764-026-00592-9
 - Alku, P. (1991). Glottal wave analysis with pitch synchronous iterative
   adaptive inverse filtering. *Proceedings of Eurospeech 1991*, 1081–1084.
 - Boë, L.-J., Laporte, M., Sawallis, T. R., Badin, P., & Schwartz, J.-L.
